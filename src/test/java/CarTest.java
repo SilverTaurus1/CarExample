@@ -37,7 +37,7 @@ public class CarTest {
     @Test
     public void debt_2(){
         fixture.drive(10, 1);
-        assertEquals(590.0, (double)fixture.getDebt(), 0.1);
+        assertEquals("The debt was " + fixture.getDebt() + " instead of 490",490.0, (double)fixture.getDebt(), 0.1);
     }
 
     @Test
