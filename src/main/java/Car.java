@@ -4,17 +4,18 @@ public class Car {
     private Integer distance;
     private Random random;
     private Integer Debt;
-
+    private Integer Mph;
     public Car(){
         random = new Random();
         distance = 0;
-        Debt = 0;
+        Debt = 100;
+        Mph = 0;
     }
 
     private void collectDebt(boolean debt){
         if (debt){
             Debt += 500;
-        }else Debt -= 100;
+        }else Debt -= Mph;
     }
 
     private boolean crashed(Integer mph){
@@ -33,6 +34,7 @@ public class Car {
 
     public String  drive(Integer mph, Integer hours){
         distance += mph * hours;
+        Mph = mph;
         boolean crash = crashed(mph);
         if (crash){
             return "You crashed";
