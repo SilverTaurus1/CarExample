@@ -8,7 +8,7 @@ public class Car {
     public Car(){
         random = new Random();
         distance = 0;
-        Debt = 100;
+        Debt = 500;
         Mph = 0;
     }
 

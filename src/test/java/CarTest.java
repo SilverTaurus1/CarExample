@@ -31,7 +31,7 @@ public class CarTest {
     @Test
     public void debt(){
         fixture.drive(230, 1);
-        assertEquals(500.0, (double)fixture.getDebt(), 0.1);
+        assertEquals(1000.0, (double)fixture.getDebt(), 0.1);
     }
 
     @Test
