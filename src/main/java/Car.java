@@ -8,6 +8,7 @@ public class Car {
     public Car(){
         random = new Random();
         distance = 0;
+        Debt = 0;
     }
 
     private void collectDebt(boolean debt){
