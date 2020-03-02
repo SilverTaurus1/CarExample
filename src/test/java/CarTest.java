@@ -34,4 +34,5 @@ public class CarTest {
         Integer distance = fixture.getDistanceCovered();
         assertEquals(100.0, (double)distance, 0.1);
     }
+
 }
