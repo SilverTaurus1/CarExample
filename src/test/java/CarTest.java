@@ -29,6 +29,12 @@ public class CarTest {
     }
 
     @Test
+    public void debt(){
+        fixture.drive(230, 1);
+        assertEquals(500.0, (double)fixture.getDebt(), 0.1);
+    }
+
+    @Test
     public void getDistanceCovered() {
         fixture.drive(100, 1);
         Integer distance = fixture.getDistanceCovered();

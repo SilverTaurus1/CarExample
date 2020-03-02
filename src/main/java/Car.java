@@ -44,4 +44,8 @@ public class Car {
     public Integer getDistanceCovered(){
         return distance;
     }
+
+    public Integer getDebt(){
+        return Debt;
+    }
 }
